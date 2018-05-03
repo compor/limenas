@@ -7,7 +7,9 @@ SOURCES_ROOT="../source/"
 LD_FLAGS=""
 LD_FLAGS="${LD_FLAGS} -Wl,-rpath ${LLVM_TOOLCHAIN_LIB_DIR}"
 
-CXX_FLAGS=""
+CXX_FLAGS=
+CXX_FLAGS="${CXX_FLAGS} -fPIC"
+CXX_FLAGS="${CXX_FLAGS} -fsanitize-memory-track-origins"
 
 INSTALL_DIR="/bulk/workbench/llvm/6.0/libcxx-msan/"
 
