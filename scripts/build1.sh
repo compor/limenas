@@ -36,7 +36,7 @@ CC=clang CXX=clang++ \
   -DLLVM_ENABLE_CXX1Y=On \
   -DCMAKE_INSTALL_PREFIX="${INSTALL_DIR}" \
   -DLLVM_EXTERNAL_CLANG_SOURCE_DIR="../source/clang/" \
-  -DLLVM_ENABLE_PROJECTS="clang;libcxx;libcxxabi;compiler-rt" \
+  -DLLVM_ENABLE_PROJECTS="clang;libcxx;libcxxabi;compiler-rt;lld" \
   -DLLVM_OPTIMIZED_TABLEGEN=On \
   -DLLVM_CCACHE_BUILD=On \
   "${1}"
